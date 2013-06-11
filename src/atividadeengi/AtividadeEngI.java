@@ -1,19 +1,25 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package atividadeengi;
 
-/**
- *
- * @author marciovicente
- */
 public class AtividadeEngI {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
+        System.out.println("1 - Criar novo filme");
+        System.out.println("2 - Locar filme");
+        int option = Keyboard.readInt();
+        
+        switch(option){
+            case 1:
+                System.out.println("Digite o nome do filme");
+                String filme = Keyboard.readString();
+                System.out.println("Digite o codigo de preco do filme");
+                int priceCode = Keyboard.readInt();
+            break;
+                
+            case 2:
+                System.out.println();
+            break;
+        }
         
         
     }
